@@ -6,55 +6,55 @@ These concepts are commonly tested in interviews to evaluate a candidate’s abi
 Mastering these intermediate-level Excel skills will not only help you stand out in job interviews but also enable you to handle real-world data challenges more efficiently.
 Author: Kirolos Girgis
 
-- Explain the use of COUNTIF and COUNTIFS?
+1) Explain the use of COUNTIF and COUNTIFS?
 
 The COUNTIF couunts cells that meet a single condition, while COUNTIFS counts cells that meet multiple critieria
 
-- How do you remove duplicates in a dataset?
+2)  How do you remove duplicates in a dataset?
 
 Select the data then go to the data tab then click on remove duplicates then select the columns you want to remove duplicates from. then click ok
 
-- What is the purpose of a Pivot Table? How would you summarize sales data by region and salesperson?
+3) What is the purpose of a Pivot Table? How would you summarize sales data by region and salesperson?
 
 Pivot Tables allow you to summarize, group, and analyze large datasets.
 Select data → Insert Pivot Table.
 Drag "Region" to Rows and "Salesperson" to Rows.
 Drag "Sales" to Values.
 
-- How do you use conditional formatting to highlight cells greater than the average?
+4) How do you use conditional formatting to highlight cells greater than the average?
 
 Select the range → Go to Home > Conditional Formatting > New Rule.
 Choose "Format cells that contain" → Select "Greater Than" → Enter =AVERAGE(range).
 
-- What formula removes extra spaces from a cell?
+5) What formula removes extra spaces from a cell?
 
 =TRIM(A1)
 
-- How do you create a dynamic chart that updates automatically?
+6) How do you create a dynamic chart that updates automatically?
 
 Use excel tables as the data source, tabled expand automatically when new data is added.
 
-- What is the purpose of Excel Tables?
+7) What is the purpose of Excel Tables?
 
 Tables simplify data management by enabling structured referencing, dynamic ranges , and filtering.
 
-- You are given a dataset with missing or incorrect values. What steps would you take to clean the data?
+8) You are given a dataset with missing or incorrect values. What steps would you take to clean the data?
 
 1- Remove Blank Rows or Columns: Use filters to identify blank rows.
-Go to Home > Find & Select > Go to Special > Blanks, then delete them.
+    Go to Home > Find & Select > Go to Special > Blanks, then delete them.
 2- Identify Missing Values: Use Conditional Formatting to highlight blanks:
-Go to Home > Conditional Formatting > New Rule > Format only cells that contain > Blanks.
-Replace missing values using formulas like =IF(A1="", "N/A", A1) or fill them manually.
+    Go to Home > Conditional Formatting > New Rule > Format only cells that contain > Blanks.
+    Replace missing values using formulas like =IF(A1="", "N/A", A1) or fill them manually.
 3- Handle Missing Data:Use techniques like: Replacing blanks with 0: =IF(A1="", 0, A1)
-Filling with column averages: =IF(A1="", AVERAGE(range), A1)
-Carrying forward previous values using Power Query or Fill Handle.
+    Filling with column averages: =IF(A1="", AVERAGE(range), A1)
+    Carrying forward previous values using Power Query or Fill Handle.
 4- Correct Incorrect Values: Use Data Validation to flag values outside acceptable ranges. Use Find and Replace for common errors (e.g., misspellings).
 5- Trim Extra Spaces: Use the TRIM function to remove extra spaces: =TRIM(A1).
 6- Convert Data Types: Ensure consistent formats for dates, numbers, and text. Use the Text to Columns tool to split and correct values.
 7- Remove Duplicates: Go to Data > Remove Duplicates to clean redundant entries.
 8- Validate the Data: Use Conditional Formatting or pivot tables to check for inconsistencies.
 
-- at steps would you take to prepare Excel Data for import into another program for example SQL?
+9) what steps would you take to prepare Excel Data for import into another program for example SQL?
 
 To prepare Excel data for SQL or other programs:
 
@@ -70,3 +70,72 @@ To prepare Excel data for SQL or other programs:
 10- Check for Null Values: Replace blanks with NULL or an appropriate value.
 11- Validate the Data: Use Excel’s Data Validation to ensure data consistency.
 12- Test Import: Import a small sample into SQL to ensure data integrity before importing the full dataset.
+
+10) What is the difference between FIND and SEARCH functions?
+
+FIND is case-sensitive, while SEARCH is case-insensitive.
+Both return the position of a character or substring in a text.
+Example:
+=FIND("A", "Data Analytics")  // Returns 6 (case-sensitive)  
+=SEARCH("a", "Data Analytics")  // Returns 2 (case-insensitive)  
+
+11) What is the difference between CONCATENATE and TEXTJOIN?
+
+CONCATENATE joins two or more text values but does not allow a delimiter.
+TEXTJOIN joins multiple text values with a specified delimiter.
+Example:
+=CONCATENATE(A1, " ", B1)  
+=TEXTJOIN(", ", TRUE, A1:A5)  // Joins A1:A5 with ", " 
+
+12) How do you extract the first, middle, or last name from a full name column?
+
+First Name: =LEFT(A1, FIND(" ", A1) - 1)
+Last Name: =RIGHT(A1, LEN(A1) - FIND(" ", A1))
+Middle Name (if applicable): Use MID function.
+
+13) How do you perform a case-sensitive lookup in Excel?
+
+Use INDEX and MATCH with EXACT:
+=INDEX(B2:B10, MATCH(TRUE, EXACT(A2:A10, "search_value"), 0))
+
+14) How do you use the IFERROR function?
+
+IFERROR replaces errors with a custom value.
+=IFERROR(A1/B1, "Error: Division by Zero")  
+
+15) What is the difference between SUBSTITUTE and REPLACE functions?
+
+SUBSTITUTE replaces specific text in a string.
+REPLACE replaces text based on position.
+Example:
+=SUBSTITUTE("Excel is fun", "fun", "powerful")  // "Excel is powerful"  
+=REPLACE("Excel123", 6, 3, "ABC")  // "ExcelABC" 
+
+16) How do you rank values in Excel?
+
+Use the RANK function:
+=RANK(A1, A1:A10)  
+Ranks A1 within A1:A10.
+
+17) How do you extract only numbers from an alphanumeric string?
+
+Use FILTERXML (for Excel 365) or array formulas:
+=TEXTJOIN("", TRUE, IF(ISNUMBER(MID(A1, ROW(A1:A100), 1) * 1), MID(A1, ROW(A1:A100), 1), ""))
+
+18) How do you create a drop-down list in Excel?
+
+Select a cell → Go to Data → Data Validation.
+Choose List and enter values or select a range.
+Click OK to create the dropdown.
+
+19) How do you create a dependent drop-down list?
+
+Use Named Ranges and INDIRECT:
+Define a named range for each category.
+Use =INDIRECT(A1) in Data Validation to make it dependent.
+
+20) How do you automate tasks in Excel?
+
+Use Macros (VBA) to automate repetitive tasks.
+Use Power Query for data transformation.
+Use Power Automate for workflows.
