@@ -1,0 +1,60 @@
+Interview Questions and Answers Repository
+
+Welcome to the Easy Microsoft Excel Interview Questions repository! 🎯
+
+This project is designed to serve as a comprehensive resource for commonly asked Excel interview questions, along with detailed answers and explanations. Whether you’re preparing for an interview, revisiting key concepts, or simply expanding your knowledge, this repository aims to be your go-to reference.
+
+Why I Created This Repository
+
+🌟 Personal Growth: To document and solidify my understanding of important topics.
+🤝 Community Support: To help others by providing structured, easy-to-digest answers for popular interview questions.
+📚 Resourcefulness: To create a reliable resource I (and others) can revisit whenever needed.
+
+How to Use This Repository
+
+Explore Topics: Browse the categorized questions to find areas relevant to your needs.
+Study Answers: Learn the answers and grasp the underlying concepts.
+Contribute: Spot an improvement or have additional insights? Feel free to open an issue or submit a pull request!
+
+Feedback and Contributions
+Your feedback is invaluable! If you have suggestions, corrections, or new questions to add, please don’t hesitate to contribute or reach out. 
+Together, we can make this a robust and valuable resource for the community.
+
+
+1) What is the difference between a workbook and a worksheet?
+
+ANSWER:
+A Workbook is an Excel file that contains one or more worksheets, its the entire file where the data is stored. On the other hand, A Worksheet is a single sheet within  a workbook where data, formulas, and charts are stored.
+
+2) How do you apply a filter in EXCEL?
+
+ANSWER:
+To apply a filter:
+Select the data range you want to filter.
+Go to the Data tab and click on Filter.
+Dropdown arrows will appear at the top of each column. You can click the arrow to filter by specific criteria.
+
+3) What is the difference between relative, absolute, and mixed cell references in EXCEL?
+
+ANSWER:
+A Relative reference Changes when the formula is copied to another cell. While Absolute reference Remains constant no matter where it is copied. Mixed reference either the column (A) or the row (1) is fixed, but not both.
+
+4) What is conditional Formatting and how is it used?
+
+ANSWER:
+Conditional formatting is used to automatically apply formatting to cells based on specific criteria. The way it is used is that you select the range of cells you want to format and go to the Home tab and click on Conditional Formatting then choose a rule or create a custom formula.
+
+5) What is the purpose oof the VLOOKUP function in EXCEL?
+
+ANSWER: 
+VLOOKUP or vertical lookup is used to find a value in the first column of a range and return a corresponding value in the same row from another column
+
+6) What is the difference between a formula and a function in EXCEL?
+
+Answer:
+A formula is an expression crreated by the user to perform calculations while a function is a predefined formula in Excel
+
+7) What are pivot tables in EXCEL?
+
+Answer:
+Pivot tables are a powerful feature in Excel used to summarize, analyze and present large datasetts in a meaningful way. they allow you to quickly calculate metrics like sums, averages, and counts grouped by categories.
