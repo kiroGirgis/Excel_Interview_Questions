@@ -33,7 +33,7 @@ A Relative reference Changes when the formula is copied to another cell. While A
 ANSWER:
 Conditional formatting is used to automatically apply formatting to cells based on specific criteria. The way it is used is that you select the range of cells you want to format and go to the Home tab and click on Conditional Formatting then choose a rule or create a custom formula.
 
-5) What is the purpose oof the VLOOKUP function in EXCEL?
+5) What is the purpose of the VLOOKUP function in EXCEL?
 
 ANSWER: 
 VLOOKUP or vertical lookup is used to find a value in the first column of a range and return a corresponding value in the same row from another column
@@ -41,9 +41,74 @@ VLOOKUP or vertical lookup is used to find a value in the first column of a rang
 6) What is the difference between a formula and a function in EXCEL?
 
 Answer:
-A formula is an expression crreated by the user to perform calculations while a function is a predefined formula in Excel
+A formula is an expression created by the user to perform calculations while a function is a predefined formula in Excel
 
 7) What are pivot tables in EXCEL?
 
 Answer:
-Pivot tables are a powerful feature in Excel used to summarize, analyze and present large datasetts in a meaningful way. they allow you to quickly calculate metrics like sums, averages, and counts grouped by categories.
+Pivot tables are a powerful feature in Excel used to summarize, analyze and present large datasets in a meaningful way. They allow you to quickly calculate metrics like sums, averages, and counts grouped by categories.
+
+8) How do you freeze panes in Excel?
+
+ANSWER:
+To freeze panes and keep specific rows or columns visible while scrolling:
+Select the row below or column to the right of where you want the freeze to apply.
+Go to the View tab and click on Freeze Panes.
+Choose Freeze Top Row, Freeze First Column, or Freeze Panes based on your needs.
+
+9) What is the shortcut to quickly select an entire column or row?
+
+ANSWER:
+
+To select an entire column: Press Ctrl + Space.
+To select an entire row: Press Shift + Space.
+
+10) How do you remove duplicates in Excel?
+
+ANSWER:
+Select the range of data where you want to remove duplicates.
+Go to the Data tab and click on Remove Duplicates.
+Select the columns to check for duplicates and click OK.
+
+11) What is the AutoFill feature in Excel?
+
+ANSWER:
+AutoFill allows users to quickly fill adjacent cells with data, formulas, or patterns. It is commonly used for filling sequences (e.g., dates, numbers) by dragging the fill handle at the bottom-right corner of a selected cell.
+
+12) How do you insert a chart in Excel?
+
+ANSWER:
+Select the data you want to visualize.
+Go to the Insert tab.
+Choose a chart type (e.g., Bar Chart, Line Chart, Pie Chart).
+Customize the chart as needed using Chart Tools.
+
+13) How do you merge cells in Excel?
+
+ANSWER:
+Select the cells you want to merge.
+Go to the Home tab and click on Merge & Center.
+Choose Merge & Center, Merge Across, or Merge Cells based on your preference.
+
+14) What is the Text to Columns feature in Excel?
+
+ANSWER:
+Text to Columns splits text from one column into multiple columns based on a delimiter (e.g., commas or spaces).
+Select the column with the data you want to split.
+Go to the Data tab and click on Text to Columns.
+Choose Delimited or Fixed Width and follow the wizard steps.
+
+15) How do you quickly find and replace data in Excel?
+
+ANSWER:
+Press Ctrl + H to open the Find and Replace dialog.
+Type the value you want to find in the "Find what" field.
+Enter the replacement value in the "Replace with" field.
+Click Replace All to update all instances at once.
+
+16) What is the COUNT function used for in Excel?
+
+ANSWER:
+The COUNT function is used to count the number of numeric values in a range. For example:
+=COUNT(A1:A10)
+This formula counts how many cells in A1:A10 contain numbers.
