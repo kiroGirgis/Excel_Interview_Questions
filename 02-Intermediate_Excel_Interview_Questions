@@ -1,21 +1,10 @@
-/*
-Purpose: Welcome to this section of my portfolio! Here, you will find a curated collection of Excel interview questions
-that I have thoughtfully answered. 
-Each solution is accompanied by detailed comments and explanations to ensure clarity and to demonstrate my thought
-process.
-
-The goal of this repository is not only to showcase my proficiency in Excel but also to serve as a resource for others 
-preparing for interviews or
-looking to strengthen their understanding of Excel concepts.
-The questions cover a range of topics, from foundational queries to more advanced techniques, highlighting practical 
-applications
-and best practices in database management and analysis.
-
-Feel free to explore, learn, and reach out if you have any questions or would like to discuss these examples further.
-Let's grow together in mastering the art of data querying!
-here you will find some Intermediate Excel interview questions that I answered with comments to explain
+Intermediate Excel Interview Questions
+As businesses become increasingly data-driven, the ability to manage and analyze data efficiently is highly valued.
+The Intermediate Excel Interview Questions category is designed for individuals who are comfortable with Excel basics and are looking to advance their skills to handle more complex tasks. 
+This section includes questions on lookup functions (VLOOKUP, HLOOKUP, and XLOOKUP), conditional formatting, pivot tables, data validation, and logical functions such as IF, AND, and OR.
+These concepts are commonly tested in interviews to evaluate a candidate’s ability to process and analyze data effectively.
+Mastering these intermediate-level Excel skills will not only help you stand out in job interviews but also enable you to handle real-world data challenges more efficiently.
 Author: Kirolos Girgis
-*/
 
 - Explain the use of COUNTIF and COUNTIFS?
 
