@@ -8,21 +8,20 @@ By excelling in these areas, you can prove your ability to tackle sophisticated 
 Author: Kirolos Girgis
 
 
--- What is an array formula, and how does it differ from a regular formula?
+1) What is an array formula, and how does it differ from a regular formula?
 
 ANSWER:
 An array formula performs multiple calculations on a range of values and returns one or multiple results. It works on arrays instead of single values like regular formulas.
 
--- How would you combine data from multiple worksheets into a single summary sheet dynamically?
+2) How would you combine data from multiple worksheets into a single summary sheet dynamically?
 
 ANSWER:
 You can combine data from multiple worksheets using consolidate tool, power Query(prefered for large datasets), or VBA mainly for automating data extraction from multiple sheets
 
--- How would you use power Query to clean and transform data? Can you derscribe a step-by-step example?
+3) How would you use power Query to clean and transform data? Can you derscribe a step-by-step example?
 
 ANSWER:
 Power Query automates data cleaning and transformation:
-
 Load Data:
 Go to Data > Get Data and import your dataset.
 Transform Data: Remove blank rows, errors, and duplicates.
@@ -31,7 +30,7 @@ Change Data Types: Ensure columns have correct formats (e.g., Date, Number, Text
 Combine Data: Append or merge queries from multiple sources.
 Load Cleaned Data: Click Close & Load to output the cleaned data into Excel.
 
--- How do you use Excel Advanced filter to extract unique records or filter data with criteria?
+4) How do you use Excel Advanced filter to extract unique records or filter data with criteria?
 
 ANSWER
 1- Go to Data > Advanced Filter.
@@ -39,7 +38,7 @@ ANSWER
 3- Check Unique Records Only to remove duplicates.
 4- Use a criteria range to apply complex filters.
 
--- What is a scenario where you would use Excel Goal Seek, solver, or what-if Analysis tools?
+5) What is a scenario where you would use Excel Goal Seek, solver, or what-if Analysis tools?
 
 ANSWER:
 Goal Seek: Use when you know the desired result and need to find the input value.
@@ -48,3 +47,75 @@ Solver: Use for complex optimization problems with constraints.
 Example: Maximize profits by adjusting production levels.
 What-If Analysis: Use to analyze scenarios based on different inputs.
 Example: Create a Scenario Summary for high, medium, and low sales estimates.
+
+6) How would you create a dependent drop-down list in Excel?
+ANSWER:
+Use Data Validation with INDIRECT. Create named ranges for the primary and dependent lists, then use INDIRECT(reference) in Data Validation for the second list.
+
+7) What is the difference between INDEX-MATCH and VLOOKUP? Why would you use one over the other?
+ANSWER:
+INDEX-MATCH is more flexible, works with data in any direction, and performs better on large datasets, unlike VLOOKUP, which requires a fixed column reference.
+
+8) How do you create a dynamic named range?
+ANSWER:
+Use the OFFSET or INDEX function in the Name Manager:
+=OFFSET(Sheet1!$A$1,0,0,COUNTA(Sheet1!$A:$A),1)
+
+9) How do you apply array formulas in Excel using dynamic arrays (e.g., UNIQUE, SORT, FILTER)?
+ANSWER: 
+Use functions like =UNIQUE(A1:A100), =SORT(A1:A100), and =FILTER(A1:C100, B1:B100>50). These formulas spill results dynamically into adjacent cells.
+
+10) What is Power Pivot, and how does it differ from regular Pivot Tables?
+ANSWER: 
+Power Pivot allows working with large datasets, creating data models, and using DAX formulas for more complex calculations compared to standard Pivot Tables.
+
+11) What are DAX formulas, and how do they enhance data analysis in Power Pivot?
+ANSWER:
+DAX (Data Analysis Expressions) is a formula language used in Power Pivot for advanced calculations, like CALCULATE(SUM(Sales[Amount]), Sales[Region]="West").
+
+12) How do you create a rolling average in Excel?
+ANSWER:
+Use the AVERAGE formula with OFFSET or INDEX:
+=AVERAGE(OFFSET(A2,COUNT(A:A)-5,0,5,1)) (calculates a rolling 5-period average).
+
+13) How do you create a macro to automate repetitive Excel tasks?
+ANSWER: 
+Use VBA: Open the Developer tab, record a macro, edit the VBA script, and assign it to a button for automation.
+
+14) What are the differences between absolute, relative, and mixed cell references in Excel?
+ANSWER:
+Absolute ($A$1): Fixed reference.
+Relative (A1): Adjusts when copied.
+Mixed ($A1 or A$1): One part fixed, the other adjusts.
+
+15) How can you use the XLOOKUP function, and how does it improve upon VLOOKUP?
+ANSWER:
+=XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode], [search_mode])
+Unlike VLOOKUP, it searches left, returns multiple columns, and handles errors better.
+
+16) How would you create a waterfall chart in Excel to visualize financial data?
+ANSWER:
+Insert a Waterfall Chart from the Charts section and categorize data as Increase, Decrease, and Total.
+
+17) How do you use Excel's Get & Transform (Power Query) to merge two datasets?
+ANSWER: 
+Load both datasets in Power Query → Merge Queries → Define a common key → Expand merged data.
+
+18) How would you use VBA to automate a repetitive task like formatting reports?
+ANSWER:
+Write a VBA script in the Developer tab, such as:
+Sub FormatReport()
+    Columns("A:E").AutoFit
+    Range("A1:E1").Font.Bold = True
+    MsgBox "Report formatted!"
+End Sub
+
+19) 
+How do you use Data Validation with custom formulas to restrict data entry?
+ANSWER:
+Use formulas like =ISNUMBER(A1) in Data Validation to allow only numeric entries.
+
+20) How would you use the SEQUENCE and RANDARRAY functions in Excel?
+ANSWER:
+=SEQUENCE(10,1,1,1) generates a list from 1 to 10.
+=RANDARRAY(5,1,1,100,TRUE) creates 5 random whole numbers between 1 and 100.
