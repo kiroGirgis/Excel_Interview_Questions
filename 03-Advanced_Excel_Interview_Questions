@@ -1,21 +1,13 @@
-/*
-Purpose: Welcome to this section of my portfolio! Here, you will find a curated collection of Excel interview questions
-that I have thoughtfully answered. 
-Each solution is accompanied by detailed comments and explanations to ensure clarity and to demonstrate my thought
-process.
-
-The goal of this repository is not only to showcase my proficiency in Excel but also to serve as a resource for others 
-preparing for interviews or
-looking to strengthen their understanding of Excel concepts.
-The questions cover a range of topics, from foundational queries to more advanced techniques, highlighting practical 
-applications
-and best practices in database management and analysis.
-
-Feel free to explore, learn, and reach out if you have any questions or would like to discuss these examples further.
-Let's grow together in mastering the art of data querying!
-here you will find some Advanced Excel interview questions that I answered with comments to explain
+Advanced Excel Interview Questions
+For professionals seeking roles that require high-level Excel expertise, mastering advanced functionalities is essential. 
+The Advanced Excel Interview Questions category is tailored for those who want to demonstrate in-depth proficiency in data manipulation, automation, and analysis.
+This section includes topics such as Power Query, VBA macros, array formulas, advanced data visualization techniques, complex nesting of functions, and statistical analysis tools.
+Many organizations rely on Excel for financial modeling, forecasting, and large-scale data management, making these advanced skills highly valuable.
+Interviewers often use these questions to assess how well candidates can optimize workflows, automate repetitive tasks, and leverage Excel’s full potential for data-driven decision-making.
+By excelling in these areas, you can prove your ability to tackle sophisticated Excel challenges and enhance business efficiency.
+Let me know if you need any refinements! 🚀
 Author: Kirolos Girgis
-*/
+
 
 -- What is an array formula, and how does it differ from a regular formula?
 
